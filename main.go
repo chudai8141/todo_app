@@ -6,8 +6,10 @@ import (
 )
 
 func main() {
+	// use models.Db
 	fmt.Println(models.Db)
 
+	// output config
 	// fmt.Println(config.Config.Port)
 	// fmt.Println(config.Config.SQLDriver)
 	// fmt.Println(config.Config.DbName)
@@ -15,16 +17,19 @@ func main() {
 
 	// log.Println("test")
 
-	u := &models.User{}
-	u.Name = "test"
-	u.Email = "test@exmaple.com"
-	u.PassWord = "testtest"
-	fmt.Println(u)
+	// setting u (User) params
+	// u := &models.User{}
+	// u.Name = "test"
+	// u.Email = "test@exmaple.com"
+	// u.PassWord = "testtest"
+	// fmt.Println(u)
 
-	u.CreateUser()
+	// create user code
+	// u.CreateUser()
 
-	user, _ := models.GetUser(1)
-	user.CreateTodo("First Todo")
+	// // create todo for user
+	// user, _ := models.GetUser(1)
+	// user.CreateTodo("First Todo")
 
 	// u, _ := models.GetUser(1)
 
@@ -39,5 +44,8 @@ func main() {
 	// u.DeleteUser()
 	// u, _ = models.GetUser(1)
 	// fmt.Println(u)
+
+	t, _ := models.GetTodo(1)
+	fmt.Println(t)
 
 }
