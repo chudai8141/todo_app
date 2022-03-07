@@ -1,1 +1,4 @@
 2022/03/07 00:01:26 main.go:15: test
+2022/03/07 14:23:05 users.go:58: near "where": syntax error
+2022/03/07 14:27:10 users.go:57: near "where": syntax error
+2022/03/07 14:28:52 users.go:57: near "where": syntax error
