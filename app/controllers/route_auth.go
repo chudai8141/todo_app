@@ -14,7 +14,6 @@ func signup(w http.ResponseWriter, r *http.Request) {
 		} else {
 			http.Redirect(w, r, "/todos", 302)
 		}
-		generateHTML(w, nil, "layout", "public_navbar", "signup")
 	} else if r.Method == "POST" {
 		err := r.ParseForm()
 		if err != nil {
