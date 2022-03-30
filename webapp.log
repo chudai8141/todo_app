@@ -2,3 +2,581 @@
 2022/03/07 14:23:05 users.go:58: near "where": syntax error
 2022/03/07 14:27:10 users.go:57: near "where": syntax error
 2022/03/07 14:28:52 users.go:57: near "where": syntax error
+2022/03/30 15:28:11 server.go:3160: http: panic serving [::1]:57420: template: public_navbar.html:1: function "defin" not defined
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0x140000bee60)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x10318d860, 0x14000099110})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x1031e9e10, 0x1400018c0e0}, {0x10317f200, 0x1031e1180}, {0x1400004f9f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1031e9e10, 0x1400018c0e0}, 0x14000182200)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1031e00e0, {0x1031e9e10, 0x1400018c0e0}, 0x14000182200)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1034055e0, {0x1031e9e10, 0x1400018c0e0}, 0x14000182200)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x1031e9e10, 0x1400018c0e0}, 0x14000182200)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000bee60, {0x1031eb560, 0x1400009b2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:28:12 server.go:3160: http: panic serving [::1]:57421: template: public_navbar.html:1: function "defin" not defined
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0x140000bef00)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x10318d860, 0x14000099230})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x1031e9e10, 0x1400018c1c0}, {0x10317f200, 0x1031e1180}, {0x140000b39f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1031e9e10, 0x1400018c1c0}, 0x14000182100)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1031e00e0, {0x1031e9e10, 0x1400018c1c0}, 0x14000182100)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1034055e0, {0x1031e9e10, 0x1400018c1c0}, 0x14000182100)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x1031e9e10, 0x1400018c1c0}, 0x14000182100)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000bef00, {0x1031eb560, 0x1400009b2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:28:12 server.go:3160: http: panic serving [::1]:57422: template: public_navbar.html:1: function "defin" not defined
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0x140000befa0)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x10318d860, 0x14000012080})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x1031e9e10, 0x14000126000}, {0x10317f200, 0x1031e1180}, {0x1400004f9f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1031e9e10, 0x14000126000}, 0x14000182300)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1031e00e0, {0x1031e9e10, 0x14000126000}, 0x14000182300)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1034055e0, {0x1031e9e10, 0x14000126000}, 0x14000182300)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x1031e9e10, 0x14000126000}, 0x14000182300)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000befa0, {0x1031eb560, 0x1400009b2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:28:12 server.go:3160: http: panic serving [::1]:57423: template: public_navbar.html:1: function "defin" not defined
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0x14000218000)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x10318d860, 0x1400010c120})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x1031e9e10, 0x14000224000}, {0x10317f200, 0x1031e1180}, {0x140000549f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1031e9e10, 0x14000224000}, 0x1400021a000)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1031e00e0, {0x1031e9e10, 0x14000224000}, 0x1400021a000)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1034055e0, {0x1031e9e10, 0x14000224000}, 0x1400021a000)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x1031e9e10, 0x14000224000}, 0x1400021a000)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x14000218000, {0x1031eb560, 0x1400009b2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:28:13 server.go:3160: http: panic serving [::1]:57424: template: public_navbar.html:1: function "defin" not defined
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0x140002180a0)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x10318d860, 0x14000012220})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x1031e9e10, 0x140002240e0}, {0x10317f200, 0x1031e1180}, {0x1400004f9f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1031e9e10, 0x140002240e0}, 0x14000166000)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1031e00e0, {0x1031e9e10, 0x140002240e0}, 0x14000166000)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1034055e0, {0x1031e9e10, 0x140002240e0}, 0x14000166000)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x1031e9e10, 0x140002240e0}, 0x14000166000)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140002180a0, {0x1031eb560, 0x1400009b2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:28:13 server.go:3160: http: panic serving [::1]:57425: template: public_navbar.html:1: function "defin" not defined
+goroutine 10 [running]:
+net/http.(*conn).serve.func1(0x14000218140)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x10318d860, 0x140000122a0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x1031e9e10, 0x140001260e0}, {0x10317f200, 0x1031e1180}, {0x140000549f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1031e9e10, 0x140001260e0}, 0x1400021a100)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1031e00e0, {0x1031e9e10, 0x140001260e0}, 0x1400021a100)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1034055e0, {0x1031e9e10, 0x140001260e0}, 0x1400021a100)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x1031e9e10, 0x140001260e0}, 0x1400021a100)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x14000218140, {0x1031eb560, 0x1400009b2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:28:13 server.go:3160: http: panic serving [::1]:57426: template: public_navbar.html:1: function "defin" not defined
+goroutine 29 [running]:
+net/http.(*conn).serve.func1(0x140000bf040)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x10318d860, 0x1400010c240})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x1031e9e10, 0x1400018c2a0}, {0x10317f200, 0x1031e1180}, {0x140000539f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1031e9e10, 0x1400018c2a0}, 0x14000182400)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1031e00e0, {0x1031e9e10, 0x1400018c2a0}, 0x14000182400)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1034055e0, {0x1031e9e10, 0x1400018c2a0}, 0x14000182400)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x1031e9e10, 0x1400018c2a0}, 0x14000182400)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000bf040, {0x1031eb560, 0x1400009b2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:28:18 server.go:3160: http: panic serving [::1]:57427: template: public_navbar.html:1: function "defin" not defined
+goroutine 32 [running]:
+net/http.(*conn).serve.func1(0x140000bf0e0)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x10318d860, 0x1400010c360})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x1031e9e10, 0x140001262a0}, {0x10317f200, 0x1031e1180}, {0x140000549f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1031e9e10, 0x140001262a0}, 0x14000166100)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1031e00e0, {0x1031e9e10, 0x140001262a0}, 0x14000166100)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1034055e0, {0x1031e9e10, 0x140001262a0}, 0x14000166100)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x1031e9e10, 0x140001262a0}, 0x14000166100)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000bf0e0, {0x1031eb560, 0x1400009b2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:28:18 server.go:3160: http: panic serving [::1]:57428: template: public_navbar.html:1: function "defin" not defined
+goroutine 33 [running]:
+net/http.(*conn).serve.func1(0x140000bf180)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x10318d860, 0x1400010c3e0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x1031e9e10, 0x1400018c460}, {0x10317f200, 0x1031e1180}, {0x140000539f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1031e9e10, 0x1400018c460}, 0x14000182500)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1031e00e0, {0x1031e9e10, 0x1400018c460}, 0x14000182500)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1034055e0, {0x1031e9e10, 0x1400018c460}, 0x14000182500)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x1031e9e10, 0x1400018c460}, 0x14000182500)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000bf180, {0x1031eb560, 0x1400009b2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:28:18 server.go:3160: http: panic serving [::1]:57429: template: public_navbar.html:1: function "defin" not defined
+goroutine 52 [running]:
+net/http.(*conn).serve.func1(0x140000bf220)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x10318d860, 0x14000012360})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x1031e9e10, 0x1400018c620}, {0x10317f200, 0x1031e1180}, {0x140000539f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1031e9e10, 0x1400018c620}, 0x14000182600)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1031e00e0, {0x1031e9e10, 0x1400018c620}, 0x14000182600)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1034055e0, {0x1031e9e10, 0x1400018c620}, 0x14000182600)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x1031e9e10, 0x1400018c620}, 0x14000182600)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000bf220, {0x1031eb560, 0x1400009b2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:28:19 server.go:3160: http: panic serving [::1]:57430: template: public_navbar.html:1: function "defin" not defined
+goroutine 55 [running]:
+net/http.(*conn).serve.func1(0x140000bf2c0)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x10318d860, 0x1400010c500})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x1031e9e10, 0x14000126380}, {0x10317f200, 0x1031e1180}, {0x140000539f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1031e9e10, 0x14000126380}, 0x14000182700)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1031e00e0, {0x1031e9e10, 0x14000126380}, 0x14000182700)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1034055e0, {0x1031e9e10, 0x14000126380}, 0x14000182700)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x1031e9e10, 0x14000126380}, 0x14000182700)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000bf2c0, {0x1031eb560, 0x1400009b2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:28:24 server.go:3160: http: panic serving [::1]:57431: template: public_navbar.html:1: function "defin" not defined
+goroutine 56 [running]:
+net/http.(*conn).serve.func1(0x140000bf360)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x10318d860, 0x14000012470})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x1031e9e10, 0x140002241c0}, {0x10317f200, 0x1031e1180}, {0x140001e29f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1031e9e10, 0x140002241c0}, 0x14000182800)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1031e00e0, {0x1031e9e10, 0x140002241c0}, 0x14000182800)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1034055e0, {0x1031e9e10, 0x140002241c0}, 0x14000182800)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x1031e9e10, 0x140002241c0}, 0x14000182800)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000bf360, {0x1031eb560, 0x1400009b2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:28:24 server.go:3160: http: panic serving [::1]:57432: template: public_navbar.html:1: function "defin" not defined
+goroutine 16 [running]:
+net/http.(*conn).serve.func1(0x140002181e0)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x10318d860, 0x1400010c590})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x1031e9e10, 0x1400018c700}, {0x10317f200, 0x1031e1180}, {0x1400004f9f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1031e9e10, 0x1400018c700}, 0x1400021a300)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1031e00e0, {0x1031e9e10, 0x1400018c700}, 0x1400021a300)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1034055e0, {0x1031e9e10, 0x1400018c700}, 0x1400021a300)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x1031e9e10, 0x1400018c700}, 0x1400021a300)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140002181e0, {0x1031eb560, 0x1400009b2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:28:24 server.go:3160: http: panic serving [::1]:57433: template: public_navbar.html:1: function "defin" not defined
+goroutine 48 [running]:
+net/http.(*conn).serve.func1(0x140002e2000)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x10318d860, 0x1400010c6b0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x1031e9e10, 0x14000126460}, {0x10317f200, 0x1031e1180}, {0x140000539f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x1031e9e10, 0x14000126460}, 0x14000166200)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1031e00e0, {0x1031e9e10, 0x14000126460}, 0x14000166200)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1034055e0, {0x1031e9e10, 0x14000126460}, 0x14000166200)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x1031e9e10, 0x14000126460}, 0x14000166200)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140002e2000, {0x1031eb560, 0x1400009b2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:29:30 server.go:3160: http: panic serving [::1]:57436: template: public_navbar.html:1: function "defin" not defined
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0x14000140e60)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x1025fd860, 0x1400011b110})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x102659e10, 0x1400018c1c0}, {0x1025ef200, 0x102651180}, {0x1400012f9f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102659e10, 0x1400018c1c0}, 0x140000a6000)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1026500e0, {0x102659e10, 0x1400018c1c0}, 0x140000a6000)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1028755e0, {0x102659e10, 0x1400018c1c0}, 0x140000a6000)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x102659e10, 0x1400018c1c0}, 0x140000a6000)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x14000140e60, {0x10265b560, 0x1400011d2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:29:30 server.go:3160: http: panic serving [::1]:57437: template: public_navbar.html:1: function "defin" not defined
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0x14000140f00)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x1025fd860, 0x1400021c0f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x102659e10, 0x140002040e0}, {0x1025ef200, 0x102651180}, {0x140000539f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102659e10, 0x140002040e0}, 0x140000a6100)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1026500e0, {0x102659e10, 0x140002040e0}, 0x140000a6100)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1028755e0, {0x102659e10, 0x140002040e0}, 0x140000a6100)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x102659e10, 0x140002040e0}, 0x140000a6100)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x14000140f00, {0x10265b560, 0x1400011d2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:29:30 server.go:3160: http: panic serving [::1]:57438: template: public_navbar.html:1: function "defin" not defined
+goroutine 37 [running]:
+net/http.(*conn).serve.func1(0x14000262000)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x1025fd860, 0x1400021c210})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x102659e10, 0x140002042a0}, {0x1025ef200, 0x102651180}, {0x140000539f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102659e10, 0x140002042a0}, 0x14000264000)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1026500e0, {0x102659e10, 0x140002042a0}, 0x14000264000)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1028755e0, {0x102659e10, 0x140002042a0}, 0x14000264000)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x102659e10, 0x140002042a0}, 0x14000264000)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x14000262000, {0x10265b560, 0x1400011d2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:29:31 server.go:3160: http: panic serving [::1]:57439: template: public_navbar.html:1: function "defin" not defined
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0x14000140fa0)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x1025fd860, 0x1400011b230})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x102659e10, 0x1400018c2a0}, {0x1025ef200, 0x102651180}, {0x140000539f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102659e10, 0x1400018c2a0}, 0x14000264100)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1026500e0, {0x102659e10, 0x1400018c2a0}, 0x14000264100)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1028755e0, {0x102659e10, 0x1400018c2a0}, 0x14000264100)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x102659e10, 0x1400018c2a0}, 0x14000264100)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x14000140fa0, {0x10265b560, 0x1400011d2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:29:31 server.go:3160: http: panic serving [::1]:57440: template: public_navbar.html:1: function "defin" not defined
+goroutine 26 [running]:
+net/http.(*conn).serve.func1(0x14000141040)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x1025fd860, 0x14000098100})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x102659e10, 0x140000be000}, {0x1025ef200, 0x102651180}, {0x140001c29f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102659e10, 0x140000be000}, 0x14000182100)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1026500e0, {0x102659e10, 0x140000be000}, 0x14000182100)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1028755e0, {0x102659e10, 0x140000be000}, 0x14000182100)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x102659e10, 0x140000be000}, 0x14000182100)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x14000141040, {0x10265b560, 0x1400011d2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:29:31 server.go:3160: http: panic serving [::1]:57441: template: public_navbar.html:1: function "defin" not defined
+goroutine 30 [running]:
+net/http.(*conn).serve.func1(0x140001410e0)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x1025fd860, 0x1400011b340})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x102659e10, 0x1400018c380}, {0x1025ef200, 0x102651180}, {0x140000539f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102659e10, 0x1400018c380}, 0x14000182300)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1026500e0, {0x102659e10, 0x1400018c380}, 0x14000182300)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1028755e0, {0x102659e10, 0x1400018c380}, 0x14000182300)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x102659e10, 0x1400018c380}, 0x14000182300)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140001410e0, {0x10265b560, 0x1400011d2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:29:36 server.go:3160: http: panic serving [::1]:57442: template: public_navbar.html:1: function "defin" not defined
+goroutine 53 [running]:
+net/http.(*conn).serve.func1(0x140000f0000)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x1025fd860, 0x1400021c2d0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x102659e10, 0x140000be0e0}, {0x1025ef200, 0x102651180}, {0x140000539f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102659e10, 0x140000be0e0}, 0x14000182400)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1026500e0, {0x102659e10, 0x140000be0e0}, 0x14000182400)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1028755e0, {0x102659e10, 0x140000be0e0}, 0x14000182400)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x102659e10, 0x140000be0e0}, 0x14000182400)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000f0000, {0x10265b560, 0x1400011d2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:29:36 server.go:3160: http: panic serving [::1]:57443: template: public_navbar.html:1: function "defin" not defined
+goroutine 54 [running]:
+net/http.(*conn).serve.func1(0x140000f00a0)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x1025fd860, 0x1400021c3d0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x102659e10, 0x14000204380}, {0x1025ef200, 0x102651180}, {0x140001c29f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102659e10, 0x14000204380}, 0x140000a6200)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1026500e0, {0x102659e10, 0x14000204380}, 0x140000a6200)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1028755e0, {0x102659e10, 0x14000204380}, 0x140000a6200)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x102659e10, 0x14000204380}, 0x140000a6200)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000f00a0, {0x10265b560, 0x1400011d2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:29:36 server.go:3160: http: panic serving [::1]:57444: template: public_navbar.html:1: function "defin" not defined
+goroutine 45 [running]:
+net/http.(*conn).serve.func1(0x140002620a0)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x1025fd860, 0x1400011b3d0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x102659e10, 0x14000204460}, {0x1025ef200, 0x102651180}, {0x140001c29f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102659e10, 0x14000204460}, 0x14000264200)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1026500e0, {0x102659e10, 0x14000204460}, 0x14000264200)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1028755e0, {0x102659e10, 0x14000204460}, 0x14000264200)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x102659e10, 0x14000204460}, 0x14000264200)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140002620a0, {0x10265b560, 0x1400011d2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:30:06 server.go:3160: http: panic serving [::1]:57447: template: public_navbar.html:1: function "defin" not defined
+goroutine 57 [running]:
+net/http.(*conn).serve.func1(0x140000f0140)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x1025fd860, 0x140000982b0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x102659e10, 0x140000be1c0}, {0x1025ef200, 0x102651180}, {0x140001c29f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102659e10, 0x140000be1c0}, 0x14000264300)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1026500e0, {0x102659e10, 0x140000be1c0}, 0x14000264300)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1028755e0, {0x102659e10, 0x140000be1c0}, 0x14000264300)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x102659e10, 0x140000be1c0}, 0x14000264300)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000f0140, {0x10265b560, 0x1400011d2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:30:06 server.go:3160: http: panic serving [::1]:57448: template: public_navbar.html:1: function "defin" not defined
+goroutine 58 [running]:
+net/http.(*conn).serve.func1(0x140000f01e0)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x1025fd860, 0x1400011b4d0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x102659e10, 0x1400018c460}, {0x1025ef200, 0x102651180}, {0x140000539f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102659e10, 0x1400018c460}, 0x140000a6300)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1026500e0, {0x102659e10, 0x1400018c460}, 0x140000a6300)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1028755e0, {0x102659e10, 0x1400018c460}, 0x140000a6300)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x102659e10, 0x1400018c460}, 0x140000a6300)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x140000f01e0, {0x10265b560, 0x1400011d2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 15:30:06 server.go:3160: http: panic serving [::1]:57449: template: public_navbar.html:1: function "defin" not defined
+goroutine 48 [running]:
+net/http.(*conn).serve.func1(0x14000262140)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1802 +0xdc
+panic({0x1025fd860, 0x1400021c5b0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/runtime/panic.go:1052 +0x2ac
+text/template.Must(...)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/text/template/helper.go:25
+todo_app/app/controllers.generateHTML({0x102659e10, 0x14000204540}, {0x1025ef200, 0x102651180}, {0x140001be9f8, 0x3, 0x3})
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/server.go:16 +0x104
+todo_app/app/controllers.top({0x102659e10, 0x14000204540}, 0x14000264400)
+	/Users/yudai_kimura/Documents/golang/todo_app/app/controllers/route_main.go:8 +0xa0
+net/http.HandlerFunc.ServeHTTP(0x1026500e0, {0x102659e10, 0x14000204540}, 0x14000264400)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2047 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1028755e0, {0x102659e10, 0x14000204540}, 0x14000264400)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2425 +0x18c
+net/http.serverHandler.ServeHTTP({0x1400018c000}, {0x102659e10, 0x14000204540}, 0x14000264400)
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:2879 +0x444
+net/http.(*conn).serve(0x14000262140, {0x10265b560, 0x1400011d2f0})
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:1930 +0xb6c
+created by net/http.(*Server).Serve
+	/Users/yudai_kimura/.goenv/versions/1.17.7/src/net/http/server.go:3034 +0x4b8
+2022/03/30 16:30:43 users.go:103: table sessions has no column named created_at
+2022/03/30 16:30:43 main.go:18: no such column: created_at
+2022/03/30 16:35:33 users.go:103: table sessions has no column named created_at
+2022/03/30 16:35:33 main.go:19: no such column: created_at
+2022/03/30 16:40:07 users.go:103: table sessions has no column named created_at
+2022/03/30 16:40:07 main.go:19: no such column: created_at
