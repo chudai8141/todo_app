@@ -33,9 +33,7 @@ func init() {
 	if err != nil {
 		log.Fatalln(err)
 	}
-
 	/*
-
 		Db, err = sql.Open(config.Config.SQLDriver, config.Config.DbName)
 		if err != nil {
 			log.Fatalln(err)
@@ -64,7 +62,6 @@ func init() {
 			user_id INTEGER,
 			created_at DATETIME)`, tableNameSession)
 		Db.Exec(cmdS)
-
 	*/
 }
 
